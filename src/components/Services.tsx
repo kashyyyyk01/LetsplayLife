@@ -5,13 +5,14 @@ import { Unlock, MessageCircle, Target } from 'lucide-react';
 const services = [
   {
     icon: Unlock,
-    title: 'Libération des boucles inconscientes',
+    title: 'Transformer son royaume intérieur',
     description: [
-      { text: 'Identifier', bold: true, rest: ' le nœud qui se répète' },
-      { text: 'Explorer les ', bold: false, rest: 'souvenirs et croyances', boldRest: true, end: ' associés' },
-      { text: 'Clarifier', bold: true, rest: ' ce qui se passe au fond de nous au niveau du mental, de l\'égo et de nos émotions' },
-      { text: 'Briser ', bold: false, rest: 'la boucle', boldRest: true, end: ' pour se sentir avancer enfin' }
+      { text: 'Débloquer', bold: true, rest: ' ce nœud qui se répète encore et encore' },
+      { text: 'Remettre à sa place', bold: true, rest: ' ce juge intérieur infatigable qui nous fait vivre un véritable enfer' },
+      { text: 'Libérer et purifier', bold: true, rest: ' notre ego, sans le rejeter' },
+      { text: 'Assainir', bold: true, rest: ' ce mental qui alourdit notre quotidien inutilement' }
     ],
+    finalText: 'Pour se sentir bien chez soi !',
     color: 'from-red-400 to-pink-500'
   },
   {
@@ -86,6 +87,24 @@ const Services = () => {
                      </p>
                     </div>
                   ))}
+                </div>
+             ) : service.title === 'Transformer son royaume intérieur' ? (
+                <div className="space-y-3">
+                 {service.description.map((item, idx) => (
+                    <div key={idx} className="flex items-start space-x-2">
+                      <span className="text-amber-600 mt-1">→</span>
+                     <p className="text-stone-600 leading-relaxed">
+                       {item.bold && <strong>{item.text}</strong>}
+                       {!item.bold && item.text}
+                       {item.boldRest && <strong>{item.rest}</strong>}
+                       {!item.boldRest && item.rest}
+                       {item.end}
+                     </p>
+                    </div>
+                  ))}
+                  <p className="text-amber-700 font-medium mt-4 italic text-center">
+                    {service.finalText}
+                  </p>
                 </div>
              ) : service.title === 'Affirmation de soi' ? (
                <div className="space-y-4">

@@ -31,49 +31,41 @@ const About = () => {
               On vit les mêmes déceptions, on retombe dans les mêmes peurs. C'est comme si on avait des œillères.
             </p>
             <p className="text-lg text-stone-700 mb-8 leading-relaxed">
-              Pendant ce temps, d'autres semblent avancer plus facilement. Pourquoi ? Pas parce qu'ils sont « meilleurs », 
-              mais parce qu'ils ont « compris le truc », un mécanisme qui nous échappe encore. Ils n'ont pas les mêmes lunettes. 
-              Ils voient la vie différemment.
+              Parce que la vie ne fait pas que des cadeaux. Parfois, elle cogne. Et dans le tumulte, on s'égare, on s'oublie.
+              Le tout, c'est de retrouver son chemin vers soi.
             </p>
+            <div className="text-center my-8">
+              <h3 className="text-3xl md:text-4xl font-bold text-amber-600 leading-tight">
+                Il est temps de rentrer à la maison
+              </h3>
+            </div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-6"
+            className="bg-amber-50 rounded-2xl p-8 border border-amber-200"
           >
-            <div className="flex items-start space-x-4">
-              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                <RefreshCw className="text-amber-600" size={24} />
-              </div>
-              <div>
-                <h3 className="text-lg font-medium text-stone-800 mb-2">Schémas répétitifs</h3>
-                <p className="text-stone-600">Identifier et briser les boucles inconscientes qui nous limitent</p>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-4">
-              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                <Eye className="text-amber-600" size={24} />
-              </div>
-              <div>
-                <h3 className="text-lg font-medium text-stone-800 mb-2">Nouveau regard</h3>
-                <p className="text-stone-600">Changer de perspective pour voir les possibilités cachées</p>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-4">
-              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                <Lightbulb className="text-amber-600" size={24} />
-              </div>
-              <div>
-                <h3 className="text-lg font-medium text-stone-800 mb-2">Compréhension profonde</h3>
-                <p className="text-stone-600">Découvrir les mécanismes qui permettent d'avancer librement</p>
-              </div>
-            </div>
+            <p className="text-lg text-stone-700 leading-relaxed font-medium">
+              Pendant ce temps, d'autres semblent avancer plus facilement. Pourquoi ? Pas parce qu'ils sont « meilleurs », 
+              mais parce qu'ils ont « compris le truc », un mécanisme qui nous échappe encore. Ils n'ont pas les mêmes lunettes. 
+              Ils voient la vie différemment.
+            </p>
           </motion.div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="mt-16 text-center"
+        >
+          <p className="text-xl text-stone-700 leading-relaxed max-w-3xl mx-auto">
+            Vous sentez un brouillard intérieur, un besoin de quitter cette boucle qui se répète 
+            ou simplement d'élargir votre royaume intérieur ?
+          </p>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -98,11 +90,10 @@ const About = () => {
               Je te propose d'affronter ce que tu ne veux peut-être pas voir ou entendre (le célèbre déni).
             </p>
             <p className="text-lg text-stone-700 leading-relaxed">
-              Peut-être que je possède déjà des clés de compréhension pour toi, ces petites vérités qu'on aurait aimé apprendre plus tôt. 
-              Peut-être que celle dont tu as besoin, nous la forgerons ensemble.
+              On creuse à deux, éclaire les zones d'ombre, on trouve les clés pour rouvrir tes portes intérieures.
             </p>
             <p className="font-medium text-amber-700 text-center">
-              Dans tous les cas, on part de là où tu en es, pour clarifier ton chemin, te libérer de ce qui t'enchaîne 
+              On part de là où tu en es, pour clarifier ton chemin, te libérer de ce qui t'enchaîne 
               et te redonner ton pouvoir de créateur conscient.
             </p>
           </div>
